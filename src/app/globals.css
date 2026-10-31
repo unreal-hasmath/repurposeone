@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8f9fd;
+  --foreground: #1a1d2d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Consistent spatial corridor theme across all pages */
+.spatial-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(216, 212, 255, 0.45) 0%, rgba(235, 238, 255, 0.2) 35%, rgba(248, 249, 253, 0.98) 70%);
+}
+
+.subtle-radar-grid {
+  background-image: radial-gradient(rgba(130, 140, 220, 0.16) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
